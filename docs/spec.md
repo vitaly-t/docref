@@ -5,6 +5,15 @@ DocRef Specification
 
 ---
 
+* [Introduction](#introduction)
+* [Syntax](#syntax)
+* [Reference Tags]
+  - [@match]
+  - [@pattern]
+  - [@line]
+  
+---
+
 # Introduction
 
 When a jsDoc comment contains tag `@docref`, it is to be replaced by jsDoc comment
@@ -81,3 +90,8 @@ the start and end of the comment block.
 */
 ```
 </details><br/>
+
+[Reference Tags]:#reference-tags
+[@match]:#tag-match
+[@pattern]:#tag-pattern
+[@line]:#tag-line
