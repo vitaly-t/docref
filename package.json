@@ -1,0 +1,43 @@
+{
+  "name": "docref",
+  "version": "0.0.1",
+  "description": "Code documentation by reference",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jasmine-node test",
+    "coverage": "istanbul cover ./node_modules/jasmine-node/bin/jasmine-node test",
+    "travis": "npm run lint && istanbul cover ./node_modules/jasmine-node/bin/jasmine-node test --captureExceptions && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "lint": "./node_modules/.bin/eslint ./lib ./test/**/*Spec.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/vitaly-t/docref",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vitaly-t/docref.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vitaly-t/docref/issues",
+    "email": "vitaly.tomilov@gmail.com"
+  },
+  "keywords": [
+    "jsDoc",
+    "reference"
+  ],
+  "author": {
+    "name": "Vitaly Tomilov",
+    "email": "vitaly.tomilov@gmail.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10",
+    "npm": ">=1.4"
+  },
+  "devDependencies": {
+    "coveralls": "~3.0.0",
+    "eslint": "~4.16.0",
+    "istanbul": "~0.4.5",
+    "jasmine-node": "~1.14.5"
+  }
+}
