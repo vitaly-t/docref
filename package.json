@@ -10,7 +10,8 @@
     "lint": "./node_modules/.bin/eslint ./lib ./test/**/*Spec.js"
   },
   "files": [
-    "lib"
+    "lib",
+    "docs"
   ],
   "homepage": "https://github.com/vitaly-t/docref",
   "repository": {

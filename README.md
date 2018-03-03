@@ -1,5 +1,15 @@
 # docref
 
-Code documentation by reference.
+Imports jsDoc comments from external files, via jsDoc-like reference.
 
-**This project is under development, not to be used.**
+```js
+/**
+* @docref
+* @file src/file.js
+* @match class#property
+*/
+```
+
+**NOTE:** This project is currently at the stage of formulating [Specification].
+
+[Specification]:./docs/spec.md
