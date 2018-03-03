@@ -1,6 +1,6 @@
 # docref
 
-Imports jsDoc comments from external files, via jsDoc-like reference.
+Imports jsDoc comments from external files, via jsDoc-like reference:
 
 ```js
 /**
@@ -10,6 +10,9 @@ Imports jsDoc comments from external files, via jsDoc-like reference.
 */
 ```
 
-**NOTE:** This project is currently at the stage of formulating [Specification].
+**NOTES:**
+* This project is currently at the stage of writing [Specification].
+* See also the [Rationale] behind this project. 
 
 [Specification]:./docs/spec.md
+[Rationale]:./docs/rationale.md
