@@ -2,17 +2,18 @@
 
 Imports jsDoc comments from external files, via jsDoc-like reference:
 
-```js
+```ts
 /**
 * @docref
-* @file src/file.js
-* @match class#property
+* @file src/product.js
+* @match Product.buy
 */
+buy(id: string, count: number):Receipt
 ```
 
-**NOTES:**
-* This project is currently at the stage of writing [Specification].
-* See also the [Rationale] behind this project. 
+This project is currently at the stage of writing [Specification].
+
+See also the [Rationale] behind this project. 
 
 [Specification]:./docs/spec.md
 [Rationale]:./docs/rationale.md
