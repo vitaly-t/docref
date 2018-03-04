@@ -36,7 +36,7 @@ Text on lines outside of supported tags is ignored.
 Reference tags [@match], [@pattern] and [@line] are supported. And there must be
 exactly one of this tags specified, or else an error will be thrown.
 
-## Tag @match
+## @match
 
 Syntax: `@match value`.
 
@@ -54,7 +54,7 @@ Searches for the matching jsDoc comment using a text string (case-sensitive).
 ```
 </details><br/>
 
-## Tag @pattern
+## @pattern
 
 Syntax: `@pattern regEx`
 
@@ -72,7 +72,7 @@ Searches for the matching jsDoc comment by using a regular expression.
 ```
 </details><br/>
 
-## Tag @line
+## @line
 
 Syntax: `@line number`
 
@@ -92,6 +92,6 @@ the start and end of the comment block.
 </details><br/>
 
 [Reference Tags]:#reference-tags
-[@match]:#tag-match
-[@pattern]:#tag-pattern
-[@line]:#tag-line
+[@match]:#match
+[@pattern]:#pattern
+[@line]:#line
