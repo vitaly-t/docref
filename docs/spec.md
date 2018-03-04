@@ -92,6 +92,16 @@ the start and end of the comment block.
 ```
 </details><br/>
 
+# Optional Tags
+
+## @docref-config
+
+## @declare
+
+## @ignore
+
+## @exec
+
 # Configuration
 
 Processing engine can be configured both internally, within the input file, and via an external file.
@@ -99,28 +109,46 @@ Processing engine can be configured both internally, within the input file, and 
 By default, the engine tries to locate `.docref.json` in the same folder as the input file,
 and if not found - tries for `.docref.js`, to implement a module that exports the same configuration.
 
-**Supported JSON/JS configuration:**
+If you need to use processing plugins, then you have to use a module for configuration.
+Otherwise, a simple JSON file is sufficient. See the examples below.
+
+<details>
+<summary><b>JSON File</b></summary>
 
 ```js
 {
+    "declarations": {
+        "variable1": "value1",
+        "variable2": "value2"
+    }            
+}
+```
+</details><br/>
+
+<details>
+<summary><b>Module File</b></summary>
+
+```js
+module.exports = {
     declarations: {
         variable1: 'value1',
         variable2: 'value2'
     },
     plugins: {
         func1: (config, input, params) => {
-            // config - current configuration for the input
-            // input - the complete original jsDoc block
-            // params - parameters passed into the plugin function
+            // config: current configuration for the input
+            // input: the complete original jsDoc block
+            // params: parameters passed into the plugin function
             
             // process the input and return the resulting string
         },
         func2: (config, input, params) => {
-            // see above 
+            // same as above 
         }
     }             
 }
 ```
+</details><br/>
 
 [Configuration]:#configuration
 [Reference Tags]:#reference-tags
