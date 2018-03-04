@@ -1,6 +1,6 @@
 {
   "name": "docref",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Code documentation by reference",
   "main": "lib/index.js",
   "scripts": {
@@ -11,8 +11,12 @@
   },
   "files": [
     "lib",
-    "docs"
+    "docs",
+    "bin"
   ],
+  "bin": {
+    "docref": "./bin/docref"
+  },
   "homepage": "https://github.com/vitaly-t/docref",
   "repository": {
     "type": "git",
