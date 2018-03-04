@@ -12,6 +12,7 @@ DocRef Specification
   - [@pattern]
   - [@line]
 * [Configuration]
+* [Command Line]
   
 ---
 
@@ -150,6 +151,12 @@ module.exports = {
 ```
 </details><br/>
 
+# Command Line
+
+This module is primarily for use from the command line.
+
+
+[Command Line]:#command-line
 [Configuration]:#configuration
 [Reference Tags]:#reference-tags
 [@match]:#match

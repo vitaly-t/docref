@@ -19,5 +19,13 @@ This project is currently at the stage of writing [Specification].
 
 See also the [Rationale] behind this project. 
 
+# installing
+
+```
+$npm install docref -g
+```
+
+Run `docref` without arguments, to see the supported syntax.
+
 [Specification]:./docs/spec.md
 [Rationale]:./docs/rationale.md
