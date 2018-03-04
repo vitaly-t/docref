@@ -1,3 +1,5 @@
+'use strict';
+
 const parsers = require('../lib/parsers');
 
 describe('enumDocs', () => {
