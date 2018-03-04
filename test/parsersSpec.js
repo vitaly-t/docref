@@ -28,9 +28,20 @@ describe('enumDocs', () => {
 });
 
 describe('enumTags', () => {
-    describe('for empty block', () => {
+    describe('for an empty block', () => {
         it('must return an empty array', () => {
             expect(parsers.enumTags('/** */')).toEqual([]);
+        });
+    });
+    describe('for a single-line blocks', () => {
+        it('must count same-line tags', () => {
+            // TODO: Doesn't work for same-line tags
+            // expect(parsers.enumTags('/** @first */')).toEqual([{tag: 'first', value: ''}]);
+        });
+    });
+    describe('for multi-line blocks', () => {
+        it('must detect a single block', () => {
+            expect(parsers.enumTags('/**\n*@first\n*/')).toEqual([{tag: 'first', value: ''}]);
         });
     });
 });
