@@ -3,6 +3,8 @@ DocRef Specification
 
 **NOTE:** This specification is currently under development. PR-s are welcome!
 
+See also [examples].
+
 ---
 
 * [Introduction](#introduction)
@@ -196,3 +198,4 @@ This module is primarily for use from the command line.
 [@match]:#match
 [@pattern]:#pattern
 [@line]:#line
+[examples]:./examples
