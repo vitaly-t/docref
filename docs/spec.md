@@ -97,11 +97,46 @@ the start and end of the comment block.
 
 ## @docref-config
 
+Configuration override for the local file.
+
+Supports internally tags [@config] and [@declare].
+
 ## @declare
+
+Declares a variable that can be used anywhere in the file where it is declared. 
+
+<details>
+<summary><b>Example</b></summary>
+
+```
+/**
+* @docref-config
+* @declare root=../src
+*/
+```
+
+Usage Example:
+
+```
+/**
+* @decref
+* @file ${root}/input.js
+* @match ClassName.methodName
+*/
+```
+
+If configuration file has a variable with the same name (case-sensitive), the local
+declaration overrides the value for the current file.
 
 ## @ignore
 
+Indicates that the current comment block is to be ignored.
+
+Stops parsing anything else in the block, and removes it from the destination file. 
+
 ## @exec
+
+Executes a plug-in function defined in the configuration file.
 
 # Configuration
 
@@ -154,7 +189,6 @@ module.exports = {
 # Command Line
 
 This module is primarily for use from the command line.
-
 
 [Command Line]:#command-line
 [Configuration]:#configuration
