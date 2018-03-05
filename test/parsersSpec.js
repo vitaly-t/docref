@@ -45,3 +45,13 @@ describe('enumTags', () => {
         });
     });
 });
+
+describe('parseDeclare', () => {
+    it('must skip empty declarations', () => {
+        expect(parsers.parseDeclare('')).toBeNull();
+        expect(parsers.parseDeclare('abc')).toBeNull();
+    });
+    it('must allow empty string', () => {
+        expect(parsers.parseDeclare('root=')).toEqual({name: 'root', value: ''});
+    });
+});
